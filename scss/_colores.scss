@@ -1,0 +1,63 @@
+$color: white;
+
+header {
+
+    background-color: #000;
+    background-image: linear-gradient(black, rgb(130, 130, 130));
+
+
+}
+
+.aheader {
+
+    color: $color;
+
+}
+
+.aheader:hover {
+    color: #f7daa5;
+}
+
+table {
+
+    tr {
+
+        td {
+
+            border: $color 3px solid;
+            background-color: #ececec;
+
+        }
+
+    }
+
+}
+
+footer {
+ 
+    background-color: transparent;
+}
+
+footer div a {
+    color: $color;
+}
+
+.facebook:hover a {
+    color: #3b5998;
+}
+
+.instagram:hover a {
+    color: #C13584;
+}
+
+.twitter:hover a {
+    color: #1DA1F2;
+}
+
+.entradaDato label {
+    color: #838282;
+}
+
+.entradaDato input {
+    border: #cdcdcd 1px solid;
+}

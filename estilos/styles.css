@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.contGeneral {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "sobreNosotros sobreNosotros"
+        "viviendasCapital viviendasProvincia"
+        "footer footer"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+}
+
+header {
+    grid-area: header;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-image: linear-gradient(black, rgb(130, 130, 130));
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.aheader {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.aheader:hover {
+    color: #f7daa5;
+}
+
+.sobreNosotros {
+    grid-area: sobreNosotros;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.sobreNosotros h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.viviendas {
+    display: flex;
+    flex-direction: column;
+}
+
+.viviendas h3 {
+    text-align: center;
+}
+
+.viviendas .capital {
+    grid-area: viviendasCapital;
+    padding-left: 20%;
+    align-items: flex-start;
+}
+
+.viviendas .provincia {
+    grid-area: viviendasProvincia;
+    padding-right: 20%;
+    align-items: flex-end;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table tr td {
+    border: #FFF 3px solid;
+    padding: 10px 20px;
+    background-color: #ececec;
+
+}
+
+table tr td b {
+    margin: 0 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20%;
+    min-height: 100px;
+    background-image: linear-gradient(black, rgb(130, 130, 130));
+}
+
+footer div a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.facebook:hover a {
+    color: #3b5998;
+}
+
+.instagram:hover a {
+    color: #C13584;
+}
+
+.twitter:hover a {
+    color: #1DA1F2;
+}
+
+/* INICIO ESTILOS ALQUILERES y VENTAS */
+
+.contAlquileres {
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    grid-template-areas:
+        "header header header"
+        "tipos tipos tipos"
+        "prop1 prop2 prop3"
+        "footer footer footer"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.6fr 1.4fr 0.2fr;
+}
+
+.tituloAlquileres {
+    grid-area: tipos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propiedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s;
+    filter: grayscale(100%);
+
+}
+
+.propiedades p {
+    margin-top: 10px;
+
+}
+
+.prop1:hover {
+    grid-area: prop1;
+    filter: grayscale(0);
+    transform: scale(1.2);
+
+}
+
+.prop2:hover {
+    grid-area: prop2;
+    filter: grayscale(0);
+    transform: scale(1.2);
+
+}
+
+.prop3:hover {
+    grid-area: prop3;
+    filter: grayscale(0);
+    transform: scale(1.2);
+
+}
+
+/* FIN ESTILOS ALQUILERES y VENTAS */
+
+/* INICIO ESTILOS TIPO DE VIVIENDAS */
+
+.contTipoVivienda {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "filtro"
+        "boton"
+        "footer";
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+}
+
+
+.filtro {
+    grid-area: filtro;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.filtro form select {
+    width: 600px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10% 0;
+}
+
+.button {
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.button button {
+    border: none;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+/* FIN ESTILOS TIPO DE VIVIENDAS */
+
+/* INICIO ESTILOS CONTACTO */
+
+.contContacto {
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    grid-template-areas:
+        "header"
+        "formulario"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+}
+
+.contactoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.contContacto h2 {
+    font-size: 30px;
+}
+
+.contContacto form {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "nombre nombre"
+        "apellido apellido"
+        "correo correo"
+        "hombre mujer"
+        "consulta consulta"
+        "email email"
+        "button button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.3fr 0.3fr 0.6fr 0.2fr 0.3fr 0.2fr;
+}
+
+.entradaDato {
+    width: 100%;
+    text-align: left;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.apellido {
+    grid-area: apellido;
+}
+
+.correo {
+    grid-area: correo;
+}
+
+.entradaDato label {
+    font-weight: 700;
+    color: #838282;
+}
+
+.entradaDato input {
+    border: #cdcdcd 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.sexoh {
+    grid-area: hombre;
+    margin: 20px 0;
+}
+
+.sexom {
+    grid-area: mujer;
+    margin: 20px 0;
+}
+
+
+.contContacto textarea {
+    grid-area: consulta;
+}
+
+.email {
+    grid-area: email;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.botones {
+    grid-area: button;
+}
+
+.contContacto .botones input {
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin: 20px 10px;
+}
+
+/* FIN ESTILOS CONTACTO */
+
+/* INICIO ESTILOS RESPONSIVE */
+
+@media only screen and (max-width:768px) {
+    .contGeneral {
+        grid-template-areas:
+            "header"
+            "sobreNosotros"
+            "viviendasCapital"
+            "viviendasProvincia"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
+    }
+
+    .contAlquileres {
+        grid-template-areas:
+            "header"
+            "tipos"
+            "prop1"
+            "prop2"
+            "prop3"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+        grid-row-gap: 50px;
+    }
+}
+
+/* FIN ESTILOS RESPONSIVE */
+
+@media screen and (max-width:390px) {
+
+    .propiedades {
+        filter: grayscale(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s;
+    }
+
+
+    .contAlquileres {
+        grid-template-areas:
+            "header"
+            "tipos"
+            "prop1"
+            "prop2"
+            "prop3"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.4fr 0.4fr 0.4fr 0.2fr;
+        grid-row-gap: 50px;
+    }
+
+    footer{
+        width: 100%;
+        padding: 0%;
+        min-height: 200px;
+    }
+
+ }

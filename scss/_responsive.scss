@@ -1,0 +1,56 @@
+@media screen and (max-width:390px) {
+
+    .propiedades {
+        filter: grayscale(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s;
+    }
+
+
+    .contAlquileres {
+        grid-template-areas:
+            "header"
+            "tipos"
+            "prop1"
+            "prop2"
+            "prop3"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    footer{
+        width: 100%;
+        padding: 0%;
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .contGeneral {
+        grid-template-areas:
+            "header"
+            "sobreNosotros"
+            "viviendasCapital"
+            "viviendasProvincia"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
+    }
+
+    .contAlquileres {
+        grid-template-areas:
+            "header"
+            "tipos"
+            "prop1"
+            "prop2"
+            "prop3"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+        grid-row-gap: 50px;
+    }
+}
