@@ -1,451 +1,1 @@
-/* line 1, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-}
-
-/* line 8, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-body {
-  min-width: 100vw;
-  min-height: 100vh;
-  background-image: url("https://images.pexels.com/photos/2952867/pexels-photo-2952867.jpeg?cs=srgb&dl=pexels-engin-akyurt-2952867.jpg&fm=jpg");
-  background-repeat: no-repeat;
-  background-size: 1650px 950px;
-}
-
-/* line 17, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contGeneral {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-areas: "header header" "sobreNosotros sobreNosotros" "viviendasCapital viviendasProvincia" "footer footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
-}
-
-/* line 32, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-header {
-  grid-area: header;
-  justify-content: center;
-  align-items: center;
-  min-height: 100px;
-}
-
-/* line 43, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-/* line 54, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.aheader {
-  text-decoration: none;
-  margin: 0 20px;
-}
-
-/* line 59, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.sobreNosotros {
-  grid-area: sobreNosotros;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 10%;
-}
-
-/* line 67, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.sobreNosotros h2 {
-  margin-bottom: 50px;
-  font-size: 50px;
-  text-align: center;
-}
-
-/* line 73, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas {
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 91, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas h3 {
-  text-align: center;
-}
-
-/* line 95, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas .capital {
-  grid-area: viviendasCapital;
-  padding-left: 20%;
-  align-items: flex-start;
-}
-
-/* line 99, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas .provincia {
-  grid-area: viviendasProvincia;
-  padding-right: 20%;
-  align-items: flex-end;
-}
-
-/* line 104, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-table {
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-}
-
-/* line 110, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas {
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 115, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas h3 {
-  text-align: center;
-}
-
-/* line 119, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas .capital {
-  grid-area: viviendasCapital;
-  padding-left: 20%;
-  align-items: flex-start;
-}
-
-/* line 123, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.viviendas .provincia {
-  grid-area: viviendasProvincia;
-  padding-right: 20%;
-  align-items: flex-end;
-}
-
-/* line 131, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-table tr td {
-  padding: 10px 20px;
-}
-
-/* line 141, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-table tr td b {
-  margin: 0 20px;
-}
-
-/* line 145, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 20%;
-  width: 100%;
-}
-
-/* line 154, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-footer div a {
-  text-decoration: none;
-}
-
-/* line 158, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contAlquileres {
-  display: grid;
-  width: 100vw;
-  height: 100%;
-  grid-template-areas: "header header header" "tipos tipos tipos" "prop1 prop2 prop3" "footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.6fr 1.4fr 0.2fr;
-}
-
-/* line 172, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.tituloAlquileres {
-  grid-area: tipos;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 179, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.propiedades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* line 185, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.propiedades p {
-  margin-top: 10px;
-}
-
-/* line 190, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contTipoVivienda {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-areas: "header" "filtro" "boton" "footer";
-  grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
-  grid-template-columns: 1fr;
-}
-
-/* line 204, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.filtro {
-  grid-area: filtro;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-/* line 211, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.filtro form select {
-  width: 600px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: 300;
-  margin: 10% 0;
-}
-
-/* line 219, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.button {
-  grid-area: boton;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* line 227, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.button button {
-  border: none;
-  height: 50px;
-  width: 200px;
-  font-size: 20px;
-}
-
-/* line 234, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contContacto {
-  display: grid;
-  width: 100vw;
-  height: 100%;
-  grid-template-areas: "header" "formulario" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 2fr 0.2fr;
-}
-
-/* line 246, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contactoForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20%;
-}
-
-/* line 254, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contContacto h2 {
-  font-size: 30px;
-}
-
-/* line 258, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contContacto form {
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-  display: grid;
-  grid-template-areas: "nombre nombre" "apellido apellido" "correo correo" "hombre mujer" "consulta consulta" "email email" "button button";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 0.3fr 0.3fr 0.3fr 0.6fr 0.2fr 0.3fr 0.2fr;
-}
-
-/* line 275, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.entradaDato {
-  width: 100%;
-  text-align: left;
-}
-
-/* line 280, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.nombre {
-  grid-area: nombre;
-}
-
-/* line 284, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.apellido {
-  grid-area: apellido;
-}
-
-/* line 288, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.correo {
-  grid-area: correo;
-}
-
-/* line 292, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.entradaDato label {
-  font-weight: 700;
-}
-
-/* line 296, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.entradaDato input {
-  border-radius: 5px;
-  height: 30px;
-  width: 100%;
-  margin: 10px 0;
-}
-
-/* line 303, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.sexoh {
-  grid-area: hombre;
-  margin: 20px 0;
-}
-
-/* line 308, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.sexom {
-  grid-area: mujer;
-  margin: 20px 0;
-}
-
-/* line 314, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contContacto textarea {
-  grid-area: consulta;
-}
-
-/* line 318, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.email {
-  grid-area: email;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-/* line 325, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.botones {
-  grid-area: button;
-}
-
-/* line 329, ../../Desktop/Desarrollo web Alq y Ven/scss/_estructura.scss */
-.contContacto .botones input {
-  border: none;
-  height: 30px;
-  width: 100px;
-  margin: 20px 10px;
-}
-
-/* line 12, ../../Desktop/Desarrollo web Alq y Ven/scss/_animaciones.scss */
-.propiedades {
-  transition: all 1s;
-  filter: grayscale(100%);
-}
-
-/* line 3, ../../Desktop/Desarrollo web Alq y Ven/scss/_animaciones.scss */
-.prop1:hover {
-  grid-area: prop1;
-  filter: grayscale(0);
-  transform: scale(1.2);
-}
-
-/* line 3, ../../Desktop/Desarrollo web Alq y Ven/scss/_animaciones.scss */
-.prop2:hover {
-  grid-area: prop2;
-  filter: grayscale(0);
-  transform: scale(1.2);
-}
-
-/* line 3, ../../Desktop/Desarrollo web Alq y Ven/scss/_animaciones.scss */
-.prop3:hover {
-  grid-area: prop3;
-  filter: grayscale(0);
-  transform: scale(1.2);
-}
-
-/* line 3, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-header {
-  background-color: #000;
-  background-image: linear-gradient(black, #828282);
-}
-
-/* line 11, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.aheader {
-  color: white;
-}
-
-/* line 17, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.aheader:hover {
-  color: #f7daa5;
-}
-
-/* line 25, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-table tr td {
-  border: white 3px solid;
-  background-color: #ececec;
-}
-
-/* line 36, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-footer {
-  background-color: transparent;
-}
-
-/* line 41, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-footer div a {
-  color: white;
-}
-
-/* line 45, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.facebook:hover a {
-  color: #3b5998;
-}
-
-/* line 49, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.instagram:hover a {
-  color: #C13584;
-}
-
-/* line 53, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.twitter:hover a {
-  color: #1DA1F2;
-}
-
-/* line 57, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.entradaDato label {
-  color: #838282;
-}
-
-/* line 61, ../../Desktop/Desarrollo web Alq y Ven/scss/_colores.scss */
-.entradaDato input {
-  border: #cdcdcd 1px solid;
-}
-
-@media screen and (max-width: 390px) {
-  /* line 3, ../../Desktop/Desarrollo web Alq y Ven/scss/_responsive.scss */
-  .propiedades {
-    filter: grayscale(0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 1s;
-  }
-  /* line 12, ../../Desktop/Desarrollo web Alq y Ven/scss/_responsive.scss */
-  .contAlquileres {
-    grid-template-areas: "header" "tipos" "prop1" "prop2" "prop3" "footer";
-    grid-template-columns: 1fr;
-    grid-row-gap: 50px;
-    grid-template-rows: repeat(4, auto);
-  }
-  /* line 25, ../../Desktop/Desarrollo web Alq y Ven/scss/_responsive.scss */
-  footer {
-    width: 100%;
-    padding: 0%;
-    min-height: 200px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  /* line 33, ../../Desktop/Desarrollo web Alq y Ven/scss/_responsive.scss */
-  .contGeneral {
-    grid-template-areas: "header" "sobreNosotros" "viviendasCapital" "viviendasProvincia" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
-  }
-  /* line 44, ../../Desktop/Desarrollo web Alq y Ven/scss/_responsive.scss */
-  .contAlquileres {
-    grid-template-areas: "header" "tipos" "prop1" "prop2" "prop3" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
-    grid-row-gap: 50px;
-  }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+*{margin:0;padding:0;font-family:'Roboto', sans-serif;font-weight:bolder}body{min-width:100vw;min-height:100vh;background-image:url("https://images.pexels.com/photos/2952867/pexels-photo-2952867.jpeg?cs=srgb&dl=pexels-engin-akyurt-2952867.jpg&fm=jpg");background-repeat:no-repeat;background-size:1650px 950px}.contGeneral{display:grid;width:100vw;height:100vh;grid-template-areas:"header header" "sobreNosotros sobreNosotros" "viviendasCapital viviendasProvincia" "footer footer";grid-template-columns:1fr 1fr;grid-template-rows:0.2fr 1fr 1fr 0.2fr}header{grid-area:header;justify-content:center;align-items:center;min-height:100px}header nav ul{display:flex;justify-content:center;list-style:none}.aheader{text-decoration:none;margin:0 20px}.sobreNosotros{grid-area:sobreNosotros;display:flex;flex-direction:column;justify-content:center;padding:0 10%}.sobreNosotros h2{margin-bottom:50px;font-size:50px;text-align:center}.viviendas{display:flex;flex-direction:column}.viviendas h3{text-align:center}.viviendas .capital{grid-area:viviendasCapital;padding-left:20%;align-items:flex-start}.viviendas .provincia{grid-area:viviendasProvincia;padding-right:20%;align-items:flex-end}table{margin-left:auto;margin-right:auto;border-collapse:collapse}.viviendas{display:flex;flex-direction:column}.viviendas h3{text-align:center}.viviendas .capital{grid-area:viviendasCapital;padding-left:20%;align-items:flex-start}.viviendas .provincia{grid-area:viviendasProvincia;padding-right:20%;align-items:flex-end}table tr td{padding:10px 20px}table tr td b{margin:0 20px}footer{grid-area:footer;display:flex;justify-content:space-evenly;align-items:center;padding:0 20%;width:100%}footer div a{text-decoration:none}.contAlquileres{display:grid;width:100vw;height:100%;grid-template-areas:"header header header" "tipos tipos tipos" "prop1 prop2 prop3" "footer footer footer";grid-template-columns:1fr 1fr 1fr;grid-template-rows:0.2fr 0.6fr 1.4fr 0.2fr}.tituloAlquileres{grid-area:tipos;display:flex;justify-content:center;align-items:center}.propiedades{display:flex;flex-direction:column;align-items:center}.propiedades p{margin-top:10px}.contTipoVivienda{display:grid;width:100vw;height:100vh;grid-template-areas:"header" "filtro" "boton" "footer";grid-template-rows:0.2fr 1fr 1fr 0.2fr;grid-template-columns:1fr}.filtro{grid-area:filtro;display:flex;justify-content:center;align-items:flex-end}.filtro form select{width:600px;height:50px;font-size:20px;font-weight:300;margin:10% 0}.button{grid-area:boton;display:flex;justify-content:center;align-items:flex-start}.button button{border:none;height:50px;width:200px;font-size:20px}.contContacto{display:grid;width:100vw;height:100%;grid-template-areas:"header" "formulario" "footer";grid-template-columns:1fr;grid-template-rows:0.2fr 2fr 0.2fr}.contactoForm{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 20%}.contContacto h2{font-size:30px}.contContacto form{width:100%;margin-top:20px;text-align:center;display:grid;grid-template-areas:"nombre nombre" "apellido apellido" "correo correo" "hombre mujer" "consulta consulta" "email email" "button button";grid-template-columns:1fr 1fr;grid-template-rows:0.2fr 0.3fr 0.3fr 0.3fr 0.6fr 0.2fr 0.3fr 0.2fr}.entradaDato{width:100%;text-align:left}.nombre{grid-area:nombre}.apellido{grid-area:apellido}.correo{grid-area:correo}.entradaDato label{font-weight:700}.entradaDato input{border-radius:5px;height:30px;width:100%;margin:10px 0}.sexoh{grid-area:hombre;margin:20px 0}.sexom{grid-area:mujer;margin:20px 0}.contContacto textarea{grid-area:consulta}.email{grid-area:email;display:flex;justify-content:space-evenly;margin-top:20px}.botones{grid-area:button}.contContacto .botones input{border:none;height:30px;width:100px;margin:20px 10px}.propiedades{transition:all 1s;filter:grayscale(100%)}.prop1:hover{grid-area:prop1;filter:grayscale(0);transform:scale(1.2)}.prop2:hover{grid-area:prop2;filter:grayscale(0);transform:scale(1.2)}.prop3:hover{grid-area:prop3;filter:grayscale(0);transform:scale(1.2)}header{background-color:#000;background-image:linear-gradient(black, #828282)}.aheader{color:#fff}.aheader:hover{color:#f7daa5}table tr td{border:#fff 3px solid;background-color:#ececec}footer{background-color:transparent}footer div a{color:#fff}.facebook:hover a{color:#3b5998}.instagram:hover a{color:#C13584}.twitter:hover a{color:#1DA1F2}.entradaDato label{color:#838282}.entradaDato input{border:#cdcdcd 1px solid}@media screen and (max-width: 390px){.propiedades{filter:grayscale(0);display:flex;flex-direction:column;align-items:center;transition:all 1s}.contAlquileres{grid-template-areas:"header" "tipos" "prop1" "prop2" "prop3" "footer";grid-template-columns:1fr;grid-row-gap:50px;grid-template-rows:repeat(4, auto)}footer{width:100%;padding:0%;min-height:200px}}@media only screen and (max-width: 768px){.contGeneral{grid-template-areas:"header" "sobreNosotros" "viviendasCapital" "viviendasProvincia" "footer";grid-template-columns:1fr;grid-template-rows:0.2fr 1fr 0.5fr 0.5fr 0.2fr}.contAlquileres{grid-template-areas:"header" "tipos" "prop1" "prop2" "prop3" "footer";grid-template-columns:1fr;grid-template-rows:0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;grid-row-gap:50px}}
